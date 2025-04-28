@@ -1,5 +1,5 @@
 (** Prefixes of valid sexps, terminating in a hole where additional input is expected to
-    complete the sexp.  *)
+    complete the sexp. *)
 
 open Import
 open Ppx_sexp_conv_lib
