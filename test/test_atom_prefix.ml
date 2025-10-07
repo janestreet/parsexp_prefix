@@ -10,15 +10,14 @@ open! Import
     For every prefix s.t. [Atom_prefix.create] returns [Some atom_prefix], we check that
 
     1. The parser input parses to the same atom if we replace the prefix with
-    [Atom_prefix.get_signifier atom_prefix]
+       [Atom_prefix.get_signifier atom_prefix]
 
     2. [Atom_prefix.get_signifier] does not include any comments.
 
     Across all the prefix, we check that [Atom_prefix.get_signified] has returned every
     prefix of the atom.
 
-    Across all parser inputs, we check that we have covered every [state.automaton_state].
-*)
+    Across all parser inputs, we check that we have covered every [state.automaton_state]. *)
 
 let get_signified signifier =
   match Parsexp.Single.parse_string_exn signifier with
