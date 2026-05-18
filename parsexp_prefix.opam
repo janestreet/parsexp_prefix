@@ -24,7 +24,7 @@ depends: [
   "sexplib0"
   "dune"                       {>= "3.17.0"}
 ]
-available: arch != "arm32" & arch != "x86_32"
+available: arch != "x86_32"
 synopsis: "S-expression prefix parsing library"
 description: "
 This library provides utility parsers for prefixes of sexps, where the sexp
