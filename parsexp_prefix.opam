@@ -25,6 +25,9 @@ depends: [
   "dune"                       {>= "3.17.0"}
 ]
 available: arch != "x86_32"
+conflicts: [
+  "oxcaml-compiler" {< "5.2.0minus39"}
+]
 synopsis: "S-expression prefix parsing library"
 description: "
 This library provides utility parsers for prefixes of sexps, where the sexp
